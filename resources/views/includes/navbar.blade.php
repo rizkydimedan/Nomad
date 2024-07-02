@@ -1,33 +1,52 @@
-<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+<div class="container ">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{ route('home') }}"><img src="frontend/images/logo.png" alt="logo Nomads"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navb"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navb">
+                <ul class="navbar-nav ms-auto mr-3">
+                    <li class="nav-item mx-md-2 ">
+                        <a class="nav-link active" href="{{ route('home') }}">Home</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link" href="{{ route('detail') }}">Paket Travel</a>
+                    </li>
+                    <li class="nav-item mx-md-2 dropdown">
+                        <a class="nav-link dropdown-toggle" href="{{ route('home') }}" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" id="navbardrop">
+                            Service
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="">Action</a></li>
+                            <li>
+                                <a class="dropdown-item" href="">Another action</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link" href="">Testimonial</a>
+                    </li>
 
-    <!-- Sidebar Toggle (Topbar) -->
-    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-        <i class="fa fa-bars"></i>
-    </button>
+                    <!-- Moble Button -->
+                    <form class="form-check-inline d-sm-block d-md-none">
+                        <button class="btn btn-login my-2 my-sm-0 px-4">Masuk</button>
+                    </form>
 
+                    <!-- desktop button -->
+                    <form class="form-check-inline d-none d-md-block">
+                        <button class="btn  rounded-0 btn-login btn-navbar-right my-2 my-sm-0 px-4">Masuk</button>
+                    </form>
 
+                </ul>
 
-    <!-- Topbar Navbar -->
-    <ul class="navbar-nav ml-auto">
-
-        <!-- Nav Item - User Information -->
-        <li class="nav-item dropdown no-arrow">
-            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                <img class="img-profile rounded-circle"
-                    src="img/undraw_profile.svg">
-            </a>
-            <!-- Dropdown - User Information -->
-            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                    Logout
-                </a>
             </div>
-        </li>
+        </div>
+    </nav>
+    <!-- End Navbar -->
 
-    </ul>
-
-</nav>
+    
+</div>
